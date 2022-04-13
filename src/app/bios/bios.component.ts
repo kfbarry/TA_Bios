@@ -31,9 +31,18 @@ export class BiosComponent implements OnInit {
     "Writing",
     "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms."
     )
-  tas: any[] = [this.marcusChinery];
+
+    marcusChinery2 = new BiosComponent.ta ("Marcus Chinery",
+    "Object Oriented Programming (Angular, React, Apex)",
+    "Astronaut",
+    "Apex",
+    "Writing",
+    "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms."
+    )
+  tas: any[] = [this.marcusChinery, this.marcusChinery2];
 
   constructor() { }
+
 
   ngOnInit(): void {
   }

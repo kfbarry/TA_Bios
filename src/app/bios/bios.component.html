@@ -1,3 +1,13 @@
-<img src="" alt="" />
-<H1>{{ tas[0].name }}</H1>
-<p>info</p>
+<div *ngFor = "let ta of tas">
+    <img src="" alt="" />
+    <H1>{{ ta.name }}</H1>
+    <ol>
+        <li>Coding Background: {{ ta.codingBackground.value }}</li>
+        <li>Job: {{ ta.job }}</li>
+        <li>Most Common Language: {{ ta.mostCommonLang }}</li>
+        <li>Hobby : {{ ta.hobbie }}</li>
+        <li>Fun fact: {{ ta.funFact }}</li>
+    </ol>
+</div>
+
+
