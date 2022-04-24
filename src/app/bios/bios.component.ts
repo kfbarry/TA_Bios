@@ -11,14 +11,14 @@ export class BiosComponent implements OnInit {
     name: string;
     codingBackground: string;
     job: string;
-    mostCommongLang: string;
+    mostCommonLang: string;
     hobbie: string;
     funFact: string;
     constructor(name: string,codingBackground: string,job: string, mostCommonLang: string,hobbie: string,funFact: string, ){
     this.name = name;
     this.codingBackground = codingBackground;
     this.job = job;
-    this.mostCommongLang = mostCommonLang;
+    this.mostCommonLang = mostCommonLang;
     this.hobbie = hobbie;
     this.funFact = funFact;
     }
