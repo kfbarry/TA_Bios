@@ -1,5 +1,10 @@
-<div class="taInfo" *ngFor="let ta of tas">
-  <H1>{{ ta.name }}</H1>
+
+
+<div class="container">
+  <div class="taInfo" *ngFor="let ta of tas">
+  <div class="row">
+    <div class="col-sm">
+      <H1>{{ ta.name }}</H1>
   <img src="{{ ta.photo }}" alt="TA Photo" />
   <ol>
     <li>Coding Background: {{ ta.codingBackground }}</li>
@@ -8,4 +13,29 @@
     <li>Hobby : {{ ta.hobbie }}</li>
     <li>Fun fact: {{ ta.funFact }}</li>
   </ol>
+    </div>
+    <div class="col-sm">
+      <H1>{{ ta.name }}</H1>
+  <img src="{{ ta.photo }}" alt="TA Photo" />
+  <ol>
+    <li>Coding Background: {{ ta.codingBackground }}</li>
+    <li>Job: {{ ta.job }}</li>
+    <li>Most Common Language: {{ ta.mostCommonLang }}</li>
+    <li>Hobby : {{ ta.hobbie }}</li>
+    <li>Fun fact: {{ ta.funFact }}</li>
+  </ol>
+    </div>
+    <div class="col-sm">
+      <H1>{{ ta.name }}</H1>
+  <img src="{{ ta.photo }}" alt="TA Photo" />
+  <ol>
+    <li>Coding Background: {{ ta.codingBackground }}</li>
+    <li>Job: {{ ta.job }}</li>
+    <li>Most Common Language: {{ ta.mostCommonLang }}</li>
+    <li>Hobby : {{ ta.hobbie }}</li>
+    <li>Fun fact: {{ ta.funFact }}</li>
+  </ol>
+    </div>
+  </div>
+</div>
 </div>
