@@ -31,14 +31,14 @@ export class BiosComponent implements OnInit {
     "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms."
     )
 
-    marcusChinery2 = new BiosComponent.ta ("Marcus Chinery",
-    "Object Oriented Programming (Angular, React, Apex)",
-    "Astronaut",
-    "Apex",
-    "Writing",
-    "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms."
+    shawnTA = new BiosComponent.ta ("Shawn TA",
+    "Coding since I was a kid, can give more if looking for longer",
+    "A2J Tech and LaunchCode",
+    "Varies with the project, if you need one just put javascript and c#",
+    "Backpacking",
+    "I hate imos lol"
     )
-  tas: any[] = [this.marcusChinery, this.marcusChinery2];
+  tas: any[] = [this.marcusChinery, this.shawnTA];
 
   constructor() { }
 
