@@ -88,6 +88,7 @@ export class BiosComponent implements OnInit {
     "assets/images/ClarkPhoto.jpg"
     )
 
+
     
   tas: any[] = [this.marcusChinery, this.shawnTA, this.lawrence, this.safna, this.colin, this.dakotahPrasun, this.clarkRoman];
 
@@ -96,5 +97,7 @@ export class BiosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+ 
 
 }
