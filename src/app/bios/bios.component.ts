@@ -13,13 +13,15 @@ export class BiosComponent implements OnInit {
     mostCommonLang: string;
     hobbie: string;
     funFact: string;
-    constructor(name: string,codingBackground: string,job: string, mostCommonLang: string,hobbie: string,funFact: string, ){
+    photo: string;
+    constructor(name: string,codingBackground: string,job: string, mostCommonLang: string,hobbie: string,funFact: string, photo: string, ){
     this.name = name;
     this.codingBackground = codingBackground;
     this.job = job;
     this.mostCommonLang = mostCommonLang;
     this.hobbie = hobbie;
     this.funFact = funFact;
+    this.photo = photo;
     }
   }
 
@@ -28,7 +30,8 @@ export class BiosComponent implements OnInit {
     "Software Engineer",
     "Apex",
     "Writing",
-    "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms."
+    "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms.",
+    "assets/images/MarcusPhoto.jpg",
     )
 
     shawnTA = new BiosComponent.ta ("Shawn TA",
@@ -36,7 +39,8 @@ export class BiosComponent implements OnInit {
     "A2J Tech and LaunchCode",
     "Varies with the project, if you need one just put javascript and c#",
     "Backpacking",
-    "I hate imos lol"
+    "I hate imos lol",
+    "assets/images/ShawnPhoto.jpg"
     )
   tas: any[] = [this.marcusChinery, this.shawnTA];
 
