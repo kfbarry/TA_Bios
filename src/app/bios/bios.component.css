@@ -3,6 +3,6 @@ img{
     width: 20%;
 }
 
-.taInfo{
-    display: flexbox;
+.container{
+    display: flex;
 }
