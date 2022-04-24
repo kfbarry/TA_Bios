@@ -1,5 +1,6 @@
 <div class="container">
   <div class="row">
+<<<<<<< HEAD
     <div id="bioSize" class="col-sm" *ngFor="let ta of tas; let i = index">
       <H1>{{ ta.name }}</H1>
       <img src="{{ ta.photo }}" alt="TA Photo" />
@@ -10,6 +11,24 @@
         <li>Hobby : {{ ta.hobbie }}</li>
         <li>Fun fact: {{ ta.funFact }}</li>
       </ol>
+=======
+    <div class="col-sm" *ngFor="let ta of tas; let i = index">
+      <div class="taBox">
+        <img src="{{ ta.photo }}" alt="TA Photo" class="image" />
+        <H1>{{ ta.name }}</H1>
+        <div class="overlay">
+          <div class="text">
+            <ol>
+              <li>Coding Background: {{ ta.codingBackground }}</li>
+              <li>Job: {{ ta.job }}</li>
+              <li>Most Common Language: {{ ta.mostCommonLang }}</li>
+              <li>Hobby : {{ ta.hobbie }}</li>
+              <li>Fun fact: {{ ta.funFact }}</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+>>>>>>> main
     </div>
   </div>
 </div>
