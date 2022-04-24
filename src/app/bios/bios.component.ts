@@ -42,7 +42,45 @@ export class BiosComponent implements OnInit {
     "I hate imos lol",
     "assets/images/ShawnPhoto.jpg"
     )
-  tas: any[] = [this.marcusChinery, this.shawnTA];
+
+    lawrence = new BiosComponent.ta ("Lawrence",
+    "LC grad",
+    "FedEx",
+    "Java spring boot sql angular",
+    "Helping others break into tech",
+    "Lots of people brag about breaking into tech in 1 year or 6 months. It 'only' took me 25 years",
+    "assets/images/LawrencePhoto.jpeg"
+    )
+
+    safna = new BiosComponent.ta ("Safna",
+    "Masters in Computer Application",
+    "Quality Assurance Engineer Assc (IT)",
+    "Java",
+    "Love travelling, cruising and gardening",
+    "Love travelling especially road trip",
+    "assets/images/SafnaPhoto.jpg"
+    )
+
+    colin = new BiosComponent.ta ("Colin",
+    "Self taught, started with HTML, moved to JS and haven't stopped yet!",
+    "Backend developer at RX Global",
+    "Right now it's PHP :confused:",
+    "Making things (code projects, lights, tiny electrical shiz)",
+    "... I'm not very interesting...",
+    "assets/images/ColinPhoto.jpeg"
+    )
+
+    dakotahPrasun = new BiosComponent.ta ("Dakotah Prasun",
+    "Total boot camp guy, I took a local bootcamp first, was unable to get a job with that so I turned to launchCode for my 2nd bootcamp and landed a job right after",
+    "Im a Software Engineer with Vizient.",
+    "Kotlin/SQL/Angular",
+    "Im a gamer at heart.",
+    "For about a year I played Semi-Pro Esports. The game was Paladins and we won several small tournaments. I have met and played against the main roaster of G2 and Leviathan Esports",
+    "assets/images/DakotahPhoto.jpeg"
+    )
+
+    
+  tas: any[] = [this.marcusChinery, this.shawnTA, this.lawrence, this.safna, this.colin, this.dakotahPrasun];
 
   constructor() { }
 
