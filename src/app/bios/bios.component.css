@@ -3,3 +3,12 @@ img{
     width: 20%;
 }
 
+.container{
+    display: flex;
+}
+
+#bioSize {
+    height: auto;
+    width: 50%;
+    background-color: aqua;
+}
