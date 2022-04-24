@@ -79,8 +79,17 @@ export class BiosComponent implements OnInit {
     "assets/images/DakotahPhoto.jpeg"
     )
 
+    clarkRoman = new BiosComponent.ta ("Clark Roman",
+    "Some VBA, before completing Code Camp with Python and C#",
+    "Candidate Engagement Manager at Launchcode",
+    "JavaScript, but I’m working a lot with Java lately",
+    "Listening to audiobooks while walking my high-energy dog - we go at least 4 miles a day!",
+    "I volunteer with dog transports in Missouri - this means I’m a dog Uber for rescue animals on their way to their forever homes",
+    "assets/images/ClarkPhoto.jpg"
+    )
+
     
-  tas: any[] = [this.marcusChinery, this.shawnTA, this.lawrence, this.safna, this.colin, this.dakotahPrasun];
+  tas: any[] = [this.marcusChinery, this.shawnTA, this.lawrence, this.safna, this.colin, this.dakotahPrasun, this.clarkRoman];
 
   constructor() { }
 

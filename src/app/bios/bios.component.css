@@ -1,0 +1,8 @@
+img{
+    height: auto;
+    width: 20%;
+}
+
+.taInfo{
+    display: flexbox;
+}
