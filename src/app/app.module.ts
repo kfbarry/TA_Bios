@@ -7,7 +7,7 @@ import { BiosComponent } from './bios/bios.component';
 @NgModule({
   declarations: [
     AppComponent,
-    BiosComponent
+    BiosComponent,
   ],
   imports: [
     BrowserModule

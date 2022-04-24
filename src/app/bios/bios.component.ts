@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bios.component.css']
 })
 export class BiosComponent implements OnInit {
-
   static ta = class ta {
     name: string;
     codingBackground: string;
