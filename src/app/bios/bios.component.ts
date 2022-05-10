@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TA } from 'src/shared/models/TA';
 
 @Component({
   selector: 'app-bios',
@@ -6,35 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bios.component.css']
 })
 export class BiosComponent implements OnInit {
-  static ta = class ta {
-    name: string;
-    codingBackground: string;
-    job: string;
-    mostCommonLang: string;
-    hobbie: string;
-    funFact: string;
-    photo: string;
-    constructor(name: string,codingBackground: string,job: string, mostCommonLang: string,hobbie: string,funFact: string, photo: string, ){
-    this.name = name;
-    this.codingBackground = codingBackground;
-    this.job = job;
-    this.mostCommonLang = mostCommonLang;
-    this.hobbie = hobbie;
-    this.funFact = funFact;
-    this.photo = photo;
-    }
-  }
+  
 
-    marcusChinery = new BiosComponent.ta ("Marcus Chinery",
+    marcusChinery = new TA("Marcus Chinery",
     "Object Oriented Programming (Angular, React, Apex)",
     "Software Engineer",
     "Apex",
     "Writing",
     "Given how averages are calculated, combined with the fact there are some people missing an arm or at least part of it, means that 2 is an above average amount of arms.",
-    "assets/images/MarcusPhoto.jpg",
+    "assets/images/MarcusPhoto.jpg"
     )
 
-    shawnTA = new BiosComponent.ta ("Shawn TA",
+    shawnTA = new TA("Shawn TA",
     "Coding since I was a kid, can give more if looking for longer",
     "A2J Tech and LaunchCode",
     "Varies with the project, if you need one just put javascript and c#",
@@ -43,7 +27,7 @@ export class BiosComponent implements OnInit {
     "assets/images/ShawnPhoto.jpg"
     )
 
-    lawrence = new BiosComponent.ta ("Lawrence",
+    lawrence = new TA("Lawrence",
     "LC grad",
     "FedEx",
     "Java spring boot sql angular",
@@ -52,7 +36,7 @@ export class BiosComponent implements OnInit {
     "assets/images/LawrencePhoto.jpeg"
     )
 
-    safna = new BiosComponent.ta ("Safna",
+    safna = new TA ("Safna",
     "Masters in Computer Application",
     "Quality Assurance Engineer Assc (IT)",
     "Java",
@@ -61,7 +45,7 @@ export class BiosComponent implements OnInit {
     "assets/images/SafnaPhoto.jpg"
     )
 
-    colin = new BiosComponent.ta ("Colin",
+    colin = new TA ("Colin",
     "Self taught, started with HTML, moved to JS and haven't stopped yet!",
     "Backend developer at RX Global",
     "Right now it's PHP :confused:",
@@ -70,7 +54,7 @@ export class BiosComponent implements OnInit {
     "assets/images/ColinPhoto.jpeg"
     )
 
-    dakotahPrasun = new BiosComponent.ta ("Dakotah Prasun",
+    dakotahPrasun = new TA ("Dakotah Prasun",
     "Total boot camp guy, I took a local bootcamp first, was unable to get a job with that so I turned to launchCode for my 2nd bootcamp and landed a job right after",
     "Im a Software Engineer with Vizient.",
     "Kotlin/SQL/Angular",
@@ -79,7 +63,7 @@ export class BiosComponent implements OnInit {
     "assets/images/DakotahPhoto.jpeg"
     )
 
-    clarkRoman = new BiosComponent.ta ("Clark Roman",
+    clarkRoman = new TA ("Clark Roman",
     "Some VBA, before completing Code Camp with Python and C#",
     "Candidate Engagement Manager at Launchcode",
     "JavaScript, but I’m working a lot with Java lately",
@@ -90,12 +74,26 @@ export class BiosComponent implements OnInit {
 
 
     
-  tas: any[] = [this.marcusChinery, this.shawnTA, this.lawrence, this.safna, this.colin, this.dakotahPrasun, this.clarkRoman];
+  tas: TA[] = [this.marcusChinery, this.shawnTA, this.lawrence, this.safna, this.colin, this.dakotahPrasun, this.clarkRoman];
 
   constructor() { }
 
 
   ngOnInit(): void {
+  }
+
+  displayInfo(){
+    let x = document.getElementById("infoDisplay");
+    if(x != null){
+      if(x!.style.display == "none"){
+        x!.style.display = "block";
+      } else{
+        x!.style.display = "none";
+      }
+    }
+    
+    console.log("function is working")
+    
   }
 
  

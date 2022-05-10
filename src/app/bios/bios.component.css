@@ -1,46 +1,39 @@
-<<<<<<< HEAD
-img{
-    height: auto;
-    width: 20%;
-}
-
-.container{
-    display: flex;
-}
-
-#bioSize {
-    height: auto;
-    width: 50%;
-    background-color: aqua;
-}
-=======
 .taBox {
     position: relative;
-    width: 50%;
+    /* width: 50%;
     padding: 15%;
+    margin: 50px; */
   }
-  
+  .taBox .taBox-content {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+left: 5%;
+right: 5%;
+background-color: rgb(173, 42, 42);
+padding: .5em;
+  }
   .image {
     display: block;
     width: 200px;
-    height: 200px;
+    height: auto;
   }
   
-  .overlay {
+  /* .overlay {
     position: absolute;
-    top: 0;
+    top: 1;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+    left: 1;
+    right: 1;
+    height: 500px;
+    width: 300px;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
-  }
+  } */
   
   .taBox:hover .overlay {
-    opacity: 1;
+    display: block;;
   }
   
   .text {
@@ -54,4 +47,19 @@ img{
     transform: translate(-50%, -50%);
     text-align: center;
   }
->>>>>>> main
+
+  .zoom{
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /* display: none; */
+    
+  }
+  .zoom:hover{
+    transform: scale(3);
+    display: block;
+  }
+
